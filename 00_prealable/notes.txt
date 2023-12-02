@@ -1,0 +1,27 @@
+
+# 1. avoir un conteneur/bucket
+
+openstack ec2 credentials list
+openstack ec2 credentials create
+
+aws --endpoint-url=https://s3.pub1.infomaniak.cloud s3api list-buckets
+
+aws --endpoint-url=https://s3.pub1.infomaniak.cloud s3api create-bucket --bucket taxis-nyc
+
+aws --endpoint-url=https://s3.pub1.infomaniak.cloud s3api list-objects --bucket taxi-nyc | jq '.Contents[].Size' | awk 'sum += $1;END {print sum/1024/1024}' | wc -l
+
+https://docs.infomaniak.cloud/documentation/04.object-storage/010.s3/
+
+https://wiki.abyssproject.net/fr/infomaniak/public-cloud/creating-object-store-container
+
+https://docs.infomaniak.cloud/documentation/04.object-storage/third-party-integration/02.s3fs/
+
+# 2. source de données - taxis NYC
+
+https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page
+
+https://duckdb.org/docs/installation/?version=latest&environment=cli&installer=binary&platform=linux
+
+# 3. réalisation d'un program python
+
+
