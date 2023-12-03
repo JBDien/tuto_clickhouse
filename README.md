@@ -6,6 +6,6 @@ https://youtube.com/playlist?list=PLn6POgpklwWrPq8TYJFIo3q2kB9FvJyq1&si=U_u82Ikg
 
 - CLICKHOUSE : Introduction
 - CLICKHOUSE : OLAP vs OLTP
-- CLICKHOUSE : Apache Parquet
+- CLICKHOUSE : Apache Parquet -> exemple Python 
 - CLICKHOUSE local : du SQL dans dans la ligne de commande (S3, fichiers locaux,...)
 
